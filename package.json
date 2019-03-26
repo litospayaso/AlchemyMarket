@@ -1,0 +1,29 @@
+{
+  "name": "alchemymarket",
+  "version": "1.2.7",
+  "description": "Alchemy Market",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "boardgame.io": "0.31.3",
+    "bootstrap": "^4.3.1",
+    "esm": "^3.1.3",
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "^2.1.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "serving": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

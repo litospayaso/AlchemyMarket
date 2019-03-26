@@ -1,0 +1,113 @@
+/*
+ * Copyright 2017 The boardgame.io Authors
+ *
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE file or at
+ * https://opensource.org/licenses/MIT.
+ */
+
+#board {
+  border-collapse: collapse;
+  font-family: monospace;
+}
+
+#winner {
+  margin-top: 25px;
+  width: 168px;
+  text-align: center;
+}
+
+td {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #555;
+  width: 75px;
+  height: 75px;
+  line-height: 50px;
+  border: 3px solid #2e4482;
+  border-radius: 10%;
+  background: rgb(235, 235, 235);
+}
+
+td.active {
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+}
+
+/* td.active:hover {
+  background: #0ddada;
+} */
+
+.game-intro {
+  color: #fff;
+}
+.game-intro__heading {
+  z-index: 2;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100px;
+  line-height: 100px;
+}
+.game-intro__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.game-intro__wrapper {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.game-intro__wrapper:first {
+  left: 0;
+}
+.game-intro__wrapper:last-child {
+  left: 50%;
+}
+.game-intro__wrapper--separator {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  color: #333;
+  font-size: 1em;
+  text-align: center;
+}
+.game-intro__wrapper--single {
+  background-color: #4A6884;
+}
+.game-intro__wrapper--single:hover {
+  background-color: #384e63;
+}
+.game-intro__wrapper--multiplay {
+  background-color: #3A98D4;
+}
+.game-intro__wrapper--multiplay:hover {
+  background-color: #277db4;
+}
+.game-intro__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  line-height: 200px;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.game-intro__content--large {
+  font-size: 1em;
+}
